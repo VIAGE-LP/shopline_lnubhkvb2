@@ -257,49 +257,30 @@ $(document).ready(function () {
 
         // Autoplay the video on page load
     });
-
-
-
-    // 立即訂購btn動態
-    $('.buybtn').click(function (e) {
-        e.preventDefault();
-        let innerheight = window.innerHeight;
-        $('html , body').animate({
-            scrollTop: $('#size').offset().top - (0.5 * innerheight),
-        }, 900);
-    });
-
-    // event了解更多btn
-    $(".more_btn").click(function (e) {
-        e.preventDefault();
-        $('html , body').animate({
-            scrollTop: $('#more_sale').offset().top,
-        }, 900);
-    });
 });
 
 //載入優化
-document.addEventListener('DOMContentLoaded', function () {
-    var lazyImages = document.querySelectorAll('[data-src]');
-    var options = {
-        root: null, // Use the viewport as the root
-        rootMargin: '1000px', // Add a 50px margin around the viewport
-        threshold: 0.1 // Trigger when 50% of the image is in the viewport
-    };
-    function handleIntersection(entries, observer) {
-        entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-                var img = entry.target;
-                img.src = img.getAttribute('data-src');
-                img.removeAttribute('data-src');
-                img.style.opacity = 1; // Set opacity to 1 for a fade-in effect
-                observer.unobserve(img); // Stop observing the loaded image
-            }
-        });
-    }
-    var observer = new IntersectionObserver(handleIntersection, options);
-    lazyImages.forEach(function (img) {
-        observer.observe(img);
-    });
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//     var lazyImages = document.querySelectorAll('[data-src]');
+//     var options = {
+//         root: null, // Use the viewport as the root
+//         rootMargin: '1000px', // Add a 50px margin around the viewport
+//         threshold: 0.1 // Trigger when 50% of the image is in the viewport
+//     };
+//     function handleIntersection(entries, observer) {
+//         entries.forEach(function (entry) {
+//             if (entry.isIntersecting) {
+//                 var img = entry.target;
+//                 img.src = img.getAttribute('data-src');
+//                 img.removeAttribute('data-src');
+//                 img.style.opacity = 1; // Set opacity to 1 for a fade-in effect
+//                 observer.unobserve(img); // Stop observing the loaded image
+//             }
+//         });
+//     }
+//     var observer = new IntersectionObserver(handleIntersection, options);
+//     lazyImages.forEach(function (img) {
+//         observer.observe(img);
+//     });
+// });
 

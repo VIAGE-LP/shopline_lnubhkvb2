@@ -232,31 +232,46 @@ $(document).ready(function () {
         'wrapAround': true,
         'positionFromTop': 100,
     })
-    // fv影片播放完第一遍往下滑，之後loop
-    let fvvideo = document.getElementById("fv_video")
-    let video_boxHeight = $(".fv_video_box").height();
-    let first = true;
-    fvvideo.onended = function () {
-        if (first) {
-            $('html , body').animate({
-                scrollTop: $('#videolink').offset().top - (video_boxHeight / 3),
-            }, 900);
-            first = false;
-        }
-        fvvideo.play();
-    }
-    //針對Safari瀏覽器禁用loop的方法
-    let videos = document.querySelectorAll(".video_replay");
-    videos.autoplay = true;
-    videos.forEach(function (video, k) {
-        // Listen for the 'ended' event and restart the video
-        video.addEventListener("ended", function () {
-            video.currentTime = 0; // Reset the video to the beginning
-            video.play(); // Start playing the video again
-        });
 
-        // Autoplay the video on page load
-    });
+
+    //超過fv，影片播完就不自動往下滑
+    const fv_options = {
+        root: null,
+        rootMargin: "0px 0px 0px 0px",
+        threshold: 0.0,
+    };
+
+    function fv_scroll(entries, observer) {
+        const summerTop = $('#summer').position().top;
+        const scrollPos = $(window).scrollTop();
+        let fvvideo = document.getElementById("fv_video");
+        let first = true;
+
+        if (summerTop < scrollPos) {
+            fvvideo.loop = true;
+            fvvideo.play();
+            observer.unobserve(fv_target);
+        } else {
+            // console.log("在領域", summerTop, scrollPos);
+            // fv影片播放完第一遍往下滑，之後loop
+            fvvideo.onended = function () {
+                if (first) {
+                    $('html , body').animate({
+                        scrollTop: $('#summer').offset().top,
+                    }, 900);
+                    first = false;
+                    fvvideo.loop = true;
+                    // console.log(first, fvvideo);
+                }
+            }
+            fvvideo.addEventListener("ended", () => {
+                fvvideo.play();
+            })
+        }
+    }
+    const fv_target = document.querySelector(".fv_video_box");
+    const fv_observer = new IntersectionObserver(fv_scroll, fv_options);
+    fv_observer.observe(fv_target)
 });
 
 //載入優化

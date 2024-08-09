@@ -574,10 +574,11 @@
                             <source src="https://lunanaturalbra.com/hk/lnubhk/images_0124/fv/01_video.ogg"
                                 type="video/ogg" />
                         </video>
-                        <a id="summer"></a>
+                        <!--<img src="./images/fv/01_2.png" alt="">-->
                     </div>
-                    <img id="summer_event" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240806/hk_event.png" alt="" style="cursor: pointer;">
-                    <div class="point_box lazyload fadeup" id="videolink">
+                    <a id="summer"></a>
+                    <div class="point_box" id="videolink">
+                        <img id="summer_event" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240806/hk_event.png" alt="" style="cursor: pointer;">
                         <div class="point_intro_box">
                             <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2406/point_intro.png" alt="">
                             <img class="point_intro_video"
@@ -1419,7 +1420,7 @@
         let innerheight = window.innerHeight;
         $('html , body').animate({
             // scrollTop: $('#sizelink').offset().top - (0.5 * innerheight),
-            scrollTop: $('#summer_event').offset().top - 100,
+            scrollTop: $('#summer').offset().top - 100,
         }, 900);
     });
 

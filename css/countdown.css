@@ -3,7 +3,7 @@
 :root {
     /* 背景圖修改請至 */
     /* ALL */
-    --circleColor: #35CD68;/* 倒數計時器圓圈背景色 */
+    --circleColor: #e43d3c;/* 倒數計時器圓圈背景色 */
     --circleTextColor: #ffffff;/* 倒數計時器文字顏色 */
     --circleTextFamily: Impact, Charcoal;/* 倒數計時器文字字型 */
 
@@ -22,7 +22,7 @@
     --decorationDayLeft:40%; 調整到數計時器裝飾的左右位置(倒數計時器裝飾距離main-content上方的高度)  */
 
     /* PC */
-    --BGPCImg:url(https://lunanaturalbra.com/hk/lnubhk2/imgs/240722/sp_timmer.png);/* PC版背景,PS輸出大小750*200 */
+    --BGPCImg:url(https://viage-lp.github.io/shopline_lnubhkvb2/images/timer/sp_timmer.png);/* PC版背景,PS輸出大小750*200 */
     --BGPCImgposition: top right;/* 背景位置top:對齊上方/right:對齊右方 */
     --titlePCImg:calc(90%);/* 倒數計時器標題大小,單位需使用% */
     --circlePCFontSize: 3.5rem; /* 圓形數字文字大小 */

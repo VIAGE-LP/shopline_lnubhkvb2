@@ -1,6 +1,6 @@
-const day_start = new Date('2024/08/12 00:00:00'); // 天倒數 開始時間
-const sec_start = new Date('2024/08/15 00:00:00'); // 秒倒數 開始時間
-const end = new Date('2024/08/15 23:59:59'); // 結束時間
+const day_start = new Date('2024/08/30 17:00:00'); // 天倒數 開始時間
+const sec_start = new Date('2024/08/30 18:00:00'); // 秒倒數 開始時間
+const end = new Date('2024/08/30 18:30:00'); // 結束時間
 let now = new Date();
 
 //判斷進入網頁的時間點，是否在期間內

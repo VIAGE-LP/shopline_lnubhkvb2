@@ -1,0 +1,1482 @@
+<link rel="stylesheet" href="https://viage-lp.github.io/shopline_lnubhkvb2/lnubhkvb2bk20240830/css/bootstrap_custom.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="https://viage-lp.github.io/shopline_lnubhkvb2/lnubhkvb2bk20240830/css/style.css">
+<!-- <link rel="stylesheet" href="css/countdown.css"> -->
+<link rel="stylesheet" href="https://viage-lp.github.io/shopline_lnubhkvb2/lnubhkvb2bk20240830/css/countdown.css"/>
+<link rel="stylesheet" href="https://viage-lp.github.io/shopline_lnubhkvb2/lnubhkvb2bk20240830/css/carousel.css">
+<link rel="stylesheet" href="https://viage-lp.github.io/shopline_lnubhkvb2/lnubhkvb2bk20240830/css/lightbox.css"/>
+<link rel="stylesheet" href="https://viage-lp.github.io/shopline_lnubhkvb2/lnubhkvb2bk20240830/css/lazyload.css" />
+<!-- <link rel="stylesheet" href="css/lazyload.css"> -->
+
+
+<!-- shopline offer css -->
+<style>
+    /* 隱藏第一個商品列表 */
+    div#shopline-section-16889780404634e1f28b:nth-child(1) {
+        display: none !important;
+    }
+
+    #product-list__products__1691658726756013023f {
+
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .section-width {
+        padding: 0px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #shopline-section-16889780404634e1f28b .section-width {
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    /* @media (min-width: 768px) {
+    #shopline-section-16889780404634e1f28b .section-width {
+      width: 640px;
+      padding-top: 1px;
+      padding-bottom: 1px;
+    }
+  } */
+
+    @media screen and (max-width: 767px) {
+        .product-list-custom-padding__1691658726756013023f {
+            padding: 0;
+        }
+
+        #product-list__products__1691658726756013023f {
+            display: block;
+            grid-template-columns: 100%;
+            grid-template-rows: initial;
+        }
+    }
+
+    /* offer按鈕位置 */
+    .midoffer_btn1 {
+        position: absolute;
+        top: 66%;
+        right: 11%;
+        width: 78%;
+    }
+
+    .midoffer_btn1:hover {
+        opacity: 0.8;
+    }
+</style>
+
+<!-- shopline相關css -->
+<style>
+    .header {
+        z-index: 100;
+    }
+
+    .header--desktop .header__container {
+        position: fixed;
+        background-color: white;
+        left: 50%;
+        margin-left: -700px;
+        width: 1400px;
+        max-width: 100%;
+        min-height: 103px;
+        padding: 10px 20px 0;
+        display: flex;
+    }
+
+    @media screen and (max-width: 1400px) {
+        .header--desktop .header__container {
+            left: 0;
+            margin-left: 0;
+            margin: 0 auto;
+        }
+    }
+
+    .header--mobile .header__menu {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #wrapper {
+        margin-top: 127px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        #wrapper {
+            margin-top: 60px;
+        }
+    }
+
+    /* 隱藏電腦版商品資訊標籤 */
+    .quick-cart-body .variant-gallery-stage>a:last-child {
+        display: none;
+    }
+
+    /* 隱藏手機版商品資訊標籤 */
+    a.ng-binding {
+        display: none;
+    }
+
+    .CustomPage .quick-cart-price {
+        display: none;
+    }
+</style>
+
+<!-- 客製化區塊css -->
+<style>
+    /* .fv{
+        width:640px;
+        display: block;
+        margin: 0 auto;
+    }
+    img{
+        width:100%;
+    } */
+    header {
+        top: 1%;
+        left: 0%;
+    }
+
+    @media screen and (max-width: 450px) {
+        header {
+            top: 1%;
+            left: 10%;
+        }
+    }
+
+    .tab-pane {
+        padding: 0px;
+    }
+
+    @media screen and (max-width: 767px) {
+        .tab-pane {
+            padding: 0px;
+        }
+    }
+
+    .bg_colorBtn--mid {
+        top: 5%;
+        left: 10%;
+        width: 80%;
+    }
+
+    .nav-pill_new .nav-item {
+        width: calc(100%/5);
+        padding: 1%;
+        margin: 0;
+    }
+
+    .sizelinkbtn {
+        position: fixed;
+        right: 0;
+        bottom: 8px;
+        z-index: 99;
+        width: 150px;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+        .sizelinkbtn {
+            width: 24%;
+            max-width: 170px;
+        }
+    }
+
+    /* color_box區塊 */
+    .color_box_layout {
+        background-color: #fffde3;
+        max-width: 640px;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .color_box_title {
+        font-weight: 600;
+        padding-top: 32px;
+        padding-bottom: 24px;
+        text-align: center;
+        font-size: 5rem;
+        background: linear-gradient(to top, #ffbdfa, #ff3358, #ffbdfa);
+        background: -webkit-linear-gradient(to top, #ffbdfa, #ff3358, #ffbdfa);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    .color_box_layout .content {
+        position: relative;
+    }
+
+    .price_text_box {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .price_text_slogan {
+        padding: 8px;
+        font-size: 3rem;
+        text-align: center;
+        font-weight: 600;
+        border-radius: 15px;
+        background: #ff3358;
+        color: #ffffff;
+    }
+
+    .cart_btn_layout {
+        width: 80%;
+        margin: 3% auto 0 auto;
+    }
+
+    @media screen and (max-width: 768px) {
+        .color_box_title {
+            padding-top: 16px;
+            font-size: 3.2rem;
+        }
+
+        /* .price_text_box {
+            margin-top: 3%;
+            margin-bottom: 3%;
+        } */
+
+        .price_text_slogan {
+            padding: 5px;
+            font-size: 2.5rem;
+        }
+    }
+
+    /* color_box區塊 */
+
+
+    /* point_box區塊 */
+    .point_cycle_text {
+        font-family: 微軟正黑體;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: normal;
+        color: #ffffff;
+        text-align: center;
+        margin: 0;
+    }
+
+    .point_jp {
+        width: 36%;
+        position: absolute;
+        top: -3%;
+        left: -15%;
+    }
+
+    @media (max-width: 576px) {
+        .point_cycle_text {
+            font-size: 20px;
+        }
+    }
+
+    .point_btn {
+        font-family: 微軟正黑體;
+        color: #fff5d0;
+        font-weight: bold;
+        font-size: 22px;
+        text-align: center;
+        height: 10%;
+        width: 100%;
+        animation: ZoomBtn_1 1s ease-in-out infinite;
+    }
+
+    @keyframes ZoomBtn_1 {
+
+        0% {
+            font-size: 18px;
+        }
+
+        50% {
+            font-size: 22px;
+        }
+
+        100% {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .point_btn {
+            font-size: 16px;
+        }
+
+        @keyframes ZoomBtn_1 {
+            0% {
+                font-size: 14px;
+            }
+
+            50% {
+                font-size: 16px;
+            }
+
+            100% {
+                font-size: 14px;
+            }
+        }
+    }
+
+    /* point_box區塊 */
+
+    /* offer_box區塊 */
+    .offer_box {
+        display: block;
+        margin: 0 auto;
+        width: 640px;
+        position: relative;
+    }
+
+    @media screen and (max-width:768px) {
+        .offer_box {
+            width: 100%;
+        }
+    }
+
+    @keyframes bounce {
+
+        0%,
+        100% {
+            -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+        }
+
+        50% {
+            -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+        }
+    }
+
+    .offer_box .anime_bounce {
+        -webkit-animation: bounce 2.0s infinite ease-in-out;
+        animation: bounce 2.0s infinite ease-in-out;
+    }
+
+    /* offer_box區塊 */
+
+    /* 輪播區塊 */
+    .carousel_box {
+        width: 640px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width:768px) {
+        .carousel_box {
+            width: 100%;
+        }
+    }
+
+    .carousel_box .content {
+        position: relative;
+        background: url(https://lunanaturalbra.com/hk/lnubhk2/imgs/offer2/midoffer1.png) 100% center;
+        padding: 5% 0;
+    }
+
+    .bg_modelCarousel--mid {
+        position: relative;
+        width: 97%;
+        left: auto;
+        margin: 0 auto;
+    }
+
+    .bg_modelCarousel--mid .row>* {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+        padding-left: calc(var(--bs-gutter-x) * 0.5);
+        margin-top: var(--bs-gutter-y);
+    }
+
+    .card-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .carousel_title {
+        font-family: "Noto Sans TC", sans-serif;
+    }
+
+    .carousel_title_small {
+        font-family: "Noto Sans TC", sans-serif;
+        font-size: 24px;
+        background-color: #fea9bb;
+        color: #ffffff;
+        margin: 0 auto;
+        width: 52%;
+        padding: 8px;
+        letter-spacing: 3px;
+    }
+
+    .carousel_title_big {
+        font-family: "Noto Sans TC", sans-serif;
+        font-size: 52px;
+        color: #fd7d8f;
+        margin: 3% auto;
+        letter-spacing: 10px;
+    }
+
+    .tri {
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 18.6px 10px 0 10px;
+        border-color: #fea9bb transparent transparent transparent;
+    }
+
+    @media screen and (max-width:500px) {
+        .carousel_title_small {
+            width: 60%;
+            font-size: 16px;
+        }
+
+        .carousel_title_big {
+            margin: 3% auto;
+            letter-spacing: 8px;
+            font-size: 24px;
+        }
+    }
+
+    /* customer_box區塊 */
+    .customer_box {
+        width: 640px;
+        display: block;
+        margin: 0 auto;
+
+    }
+
+    .customer-title {
+        font-family: "Noto Sans TC", sans-serif;
+        font-size: 30px;
+        color: #000000;
+        margin: 3% auto;
+        letter-spacing: 5px;
+        position: relative;
+    }
+
+    .customer-title::after {
+        content: "";
+        position: absolute;
+        bottom: -45%;
+        left: 38%;
+        width: 5vw;
+        height: 3px;
+        background: #000000;
+    }
+
+    @media screen and (max-width:768px) {
+        .customer_box {
+            width: 100%;
+
+        }
+
+        .customer-title {
+            margin: 3% auto;
+            letter-spacing: 2px;
+            font-size: 24px;
+        }
+
+        .customer-title::after {
+            left: 30%;
+        }
+    }
+
+    .customer_box .content {
+        text-align: center;
+        position: relative;
+        background: url(https://lunanaturalbra.com/hk/lnubhk2/imgs/offer2/midoffer1.png) 100% center;
+        padding: 5% 2%;
+    }
+
+    /* customer_box區塊 */
+
+    /* SNS_box */
+    .SNS_box {
+        position: relative;
+    }
+
+    .SNS_gif_01 {
+        position: absolute;
+        width: 27.8%;
+        top: 44.8%;
+        left: 4%;
+    }
+
+    .SNS_gif_02 {
+        position: absolute;
+        width: 27.8%;
+        left: 33%;
+        top: 44.8%;
+    }
+
+    /* SNS_box */
+</style>
+
+<div id="wrapper">
+    <div id="container">
+        <!-- 漂浮按鈕 -->
+        <img class="sizelinkbtn" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/gotop.png" alt="">
+
+        <div id="contents_standard" class="contents">
+            <!-- selectProductWithProduct -->
+            <!-- ▼自由編集箇所▼ -->
+            <section class="main">
+                <!-- main pc -->
+                <!-- 新版timer -->
+                <div class="cdtimer_box">
+                    <div id="cdtimer" style="display: none;">
+                    <div class="countdown">
+                        <picture>
+                        <!-- 圖片大小高度限制50px,寬度小於443px -->
+                        <img class="timer-title" src="https://viage-lp.github.io/shopline_lnubhkvb2/lnubhkvb2bk20240830/images/timer/sp_timer_title.png" alt="キャンペーン終了まで">
+                        </picture>
+                        <div id="countdown" class="main-content">
+                        <div class="timer-box"><span class="day number"></span><span class="name">天</span></div>
+                        <div class="timer-box"><span class="hours number"></span><span class="name">小時</span></div>
+                        <div class="timer-box"><span class="minutes number"></span><span class="name">分</span></div>
+                        <div class="timer-box"><span class="seconds number"></span><span class="name">秒</span></div>
+                        <div class="timer-box" style="display: none;"><span class="miriseconds number"></span><span
+                            class="name">　　</span></div>
+                        </div>
+                    </div>
+                    </div>
+                    <div id="cdtimer_day" style="display: none;">
+                    <div class="countdown">
+                        <picture>
+                        <!-- 圖片大小高度限制50px,寬度小於443px -->
+                        <img class="timer-title" src="https://viage-lp.github.io/shopline_lnubhkvb2/lnubhkvb2bk20240830/images/timer/sp_timer_day_title.png" alt="キャンペーン終了まで">
+                        </picture>
+                        <div id="countdown" class="main-content">
+                        <div class="timer-box"><span class="day number"></span><span class="name">天</span></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="fv">
+                    <!-- <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2405color/02_banner.png" alt="" /> -->
+                    <img id="summer_banner" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/hk_banner.png" alt="" style="cursor: pointer;">
+                    <div class="fv_video_box">
+                        <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/01_bg_0816.png" alt="" />
+                        <video id="fv_video" src="https://lunanaturalbra.com/hk/lnubhk/images_0124/fv/01_video.mp4"
+                            autoplay muted playsinline>
+                            <source src="https://lunanaturalbra.com/hk/lnubhk/images_0124/fv/01_video.mov"
+                                type="video/mp4" />
+                            <source src="https://lunanaturalbra.com/hk/lnubhk/images_0124/fv/01_video.ogg"
+                                type="video/ogg" />
+                        </video>
+                        <a id="summer"></a>
+                    </div>
+                    <img id="summer_event" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/hk_event.png" alt="" style="cursor: pointer;">
+                    <div class="point_box lazyload fadeup" id="videolink">
+                        <div class="point_intro_box">
+                            <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2406/point_intro.png" alt="">
+                            <img class="point_intro_video"
+                                src="https://lunanaturalbra.com/hk/lnubhk/images_0124/point_box/point_intro_video.gif"
+                                alt="">
+                        </div>
+                        <!--<img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/point_box/point_title.png" alt="">-->
+                        <div class="point_content lazyload fadeup">
+                            <img class="product_intro"
+                                src="https://lunanaturalbra.com/hk/lnubhk/images_0124/point_box/product_intro.png"
+                                alt="">
+                            <a href="https://lunanaturalbra.com/hk/lnubhk/images_0124/point_box/point_content_1.gif"
+                                data-lightbox="gallery" data-title="1">
+                                <div class="point_cycle point_cycle_1" alt="1">
+                                    <img class="point_jp"
+                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2406/jp_patent.png" alt="">
+                                    <p class="point_cycle_text">活動式<br>貼合內襯<br>
+                                    </p>
+                                    <div class="point_btn">>>查看更多</div>
+                                </div>
+                                <!-- <img class="point_cycle point_cycle_1" src="https://lunanaturalbra.com/hk/lnubhk/images_0124/point_box/point_1.png" alt="1"
+                                style="grid-row: 1/2;grid-column: 2/3;transform: translate(161%, 22%);"> -->
+                                </a>
+                            <a href="https://lunanaturalbra.com/hk/lnubhk/images_0124/point_box/point_content_2.gif"
+                                data-lightbox="gallery" data-title="2">
+                                <div class="point_cycle point_cycle_2" alt="2">
+                                    <p class="point_cycle_text">手捧式<br>胸墊<br>
+                                    </p>
+                                    <div class="point_btn">>>查看更多</div>
+                                </div>
+                            </a>
+                            <a href="https://lunanaturalbra.com/hk/lnubhk/images_0124/point_box/point_content_3.png"
+                                data-lightbox="gallery" data-title="3">
+                                <div class="point_cycle point_cycle_3" alt="3">
+                                    <p class="point_cycle_text">雙重固形<br>彈力網<br>
+                                    </p>
+                                    <div class="point_btn">>>查看更多</div>
+                                </div>
+                            </a>
+                            <a href="https://lunanaturalbra.com/hk/lnubhk/images_0124/point_box/point_content_4.gif"
+                                data-lightbox="gallery" data-title="4">
+                                <div class="point_cycle point_cycle_4" alt="4">
+                                    <img class="point_jp"
+                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2406/jp_patent.png" alt="">
+                                    <p class="point_cycle_text">下緣<br>止滑帶<br>
+                                    </p>
+                                    <div class="point_btn">>>查看更多</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="video_box lazyload fadeup">
+                        <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/03-3.png" alt="" />
+                        <video class="video01" src="https://lunanaturalbra.com/Lshare/video/video01.mov" loop autoplay
+                            muted playsinline>
+                            <source src="https://lunanaturalbra.com/Lshare/video/video01.mov" type="video/mp4" />
+                        </video>
+                    </div>
+                    <img class="lazyload fadeup" src="https://lunanaturalbra.com/hk/lnubhk/images_0124/3_Fintro.gif" />
+                    <!-- <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2403new/20.png" alt="" /> -->
+                    <div class="programme_box lazyload fadeup">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <div class="accordion-button collapsed p-0" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" style="position: relative;">
+                                    <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2406/programme_btn_2.png">
+                                    <div class="programme_btn"
+                                        style="position: absolute;left: 50%;transform: translate(-50%, -30%);cursor: pointer;">
+                                        點擊查看更多</div>
+                                </div>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body p-0">
+                                        <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/programme_box/programme_content.png" alt="">
+                                        <!-- <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2406/programme_content_2.png" alt=""> -->
+                                        <video class="programme_video video_replay"
+                                            src="https://lunanaturalbra.com/hk/lnubhk/images_0124/programme_box/03_video.mp4"
+                                            loop autoplay muted playsinline>
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="lazyload fadeup" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2406/15_01_2.png" alt="" />
+                    <img class="lazyload fadeup" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2406/15_02.png" alt="" />
+                    <!-- <div class="color_box" id="videolink">
+                        <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/06_color/06_color_title.png"
+                            alt="">
+                        <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_title_1.png" alt="">
+                        <div class="color_2btn trigger_01">
+                            <div class="col p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn01_01.png"
+                                    alt="" data-show="01">
+                            </div>
+                            <div class="col p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn01_02.png"
+                                    alt="" data-show="02">
+                            </div>
+                        </div>
+                        <div class="show_01"><img
+                                src="https://lunanaturalbra.com/Lshare/images/06_color/show/01_01.png" alt="">
+                        </div>
+
+                        <div class="color_2btn trigger_02">
+                            <div class="col p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn02_01.png"
+                                    alt="" data-show="01">
+                            </div>
+                            <div class="col p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn02_02.png"
+                                    alt="" data-show="02">
+                            </div>
+                        </div>
+                        <div class="show_02"></div>
+
+                        <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_title_02.png" alt="">
+                        <div class="color_3btn trigger_03">
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn03_01.png"
+                                    alt="" data-show="01">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn03_02.png"
+                                    alt="" data-show="02">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn03_03.png"
+                                    alt="" data-show="03">
+                            </div>
+                        </div>
+                        <div class="show_03"></div>
+
+                        <div class="color_3btn trigger_04">
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/06_color/06_color_btn04_01.png"
+                                    alt="" data-show="01">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn04_02.png"
+                                    alt="" data-show="02">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn04_03.png"
+                                    alt="" data-show="03">
+                            </div>
+                        </div>
+                        <div class="show_04"></div>
+
+                        <div class="color_3btn trigger_05">
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/06_color/06_color_btn05_01.png"
+                                    alt="" data-show="01">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn05_02.png"
+                                    alt="" data-show="02">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/06_color/06_color_btn05_03.png"
+                                    alt="" data-show="03">
+                            </div>
+                        </div>
+                        <div class="show_05"></div>
+
+                        <div class="color_3btn trigger_06">
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/06_color/06_color_btn06_01.png"
+                                    alt="" data-show="01">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn06_02.png"
+                                    alt="" data-show="02">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/06_color/06_color_btn06_03.png"
+                                    alt="" data-show="03">
+                            </div>
+                        </div>
+                        <div class="show_06"></div>
+
+                        <div class="color_3btn trigger_07">
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/06_color/06_color_btn07_01.png"
+                                    alt="" data-show="01">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/06_color/06_color_btn07_02.png"
+                                    alt="" data-show="02">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/06_color/06_color_btn07_03.png"
+                                    alt="" data-show="03">
+                            </div>
+                        </div>
+                        <div class="show_07"></div>
+                    </div> -->
+
+                    <section class="customer_box lazyload fadeup">
+                        <div class="content">
+                            <p class="mb-5">
+                                <span class="customer-title">顧客評價</span>
+                                <span></span>
+                            </p>
+                            <iframe id="customer-1" src="https://www.lunabrahk.com/products/luna-bra-2-2" width="600"
+                                height="430" frameborder="0"></iframe>
+                        </div>
+                    </section>
+
+                    <!-- 輪播區塊 -->
+                    <section class="bg bg_midoffer1 carousel_box lazyload fadeup">
+                        <div class="content">
+                            <div class="carousel_title" style="width: 100%;text-align: center;">
+                                <p class="carousel_title_small">機能內衣也能有高顏值</p>
+                                <div class="tri"></div>
+                                <p class="carousel_title_big">15色任意選搭!</p>
+                            </div>
+
+                            <!-- model輪播圖(中間offer) -->
+                            <div class="bg_modelCarousel--mid" style="bottom:6%;">
+                                <div class=" text-center my-3">
+                                    <div class="row mx-auto my-auto justify-content-center">
+                                        <div class="carousel slide" id="recipeCarousel_1" data-bs-ride="carousel">
+                                            <div id="carousel--A" class="carousel-inner" role="listbox">
+                                                <!-- <div class="carousel-item active">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2405color/17.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                                <div class="carousel-item active">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/1.webp">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/2.webp">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="carousel-item">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/3.webp">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                                <div class="carousel-item">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/4.webp">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/5.webp">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/6.webp">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/7.webp">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/8.webp">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="carousel-item">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/9.webp">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                                <!-- <div class="carousel-item">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/10.webp">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                                <div class="carousel-item">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/11.webp">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/12.webp">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/13.webp">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/14.webp">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/15.webp">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/16.webp">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="carousel-item">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/17.webp">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                                <div class="carousel-item">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/18.webp">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="col-md-4 px-md-3 px-0">
+                                                        <div class="card">
+                                                            <div class="card-img">
+                                                                <img
+                                                                    src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/19.webp">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev bg-transparent w-aut" data-bs-slide="prev"
+                                                href="#recipeCarousel_1" role="button"
+                                                style="width: 7%!important;opacity: 1!important;">
+                                                <span class aria-hidden="true"><img
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/Color-Left.webp"
+                                                        style="width:100%;"></span>
+                                            </a>
+                                            <a class="carousel-control-next bg-transparent w-aut" data-bs-slide="next"
+                                                href="#recipeCarousel_1" role="button"
+                                                style="width: 7%!important;opacity: 1!important;">
+                                                <span class aria-hidden="true"><img
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/offer/carousel/Color-Right.webp"
+                                                        style="width:100%;"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    
+                    <a id="summer_offer"></a>
+                    <section class="color_box_layout lazyload fadeup">
+                        <p class="color_box_title">養成美胸從現在開始</p>
+                        <div class="d-flex justify-content-center">
+                            <div class="bg bg_midoffer2 color-content">
+                                <div class="content">
+                                    <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/0816.webp">
+                                    <!-- <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2405color/model_o_27.png"> -->
+                                    <div class="price_text_box">
+                                        <p class="price_text_slogan">尺寸顏色自由搭配</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    
+                    <img class="lazyload fadeup copybtn" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/offerbanner.png" alt="" style="cursor: pointer;"/>
+                    <div class="offer_box lazyload fadeup" style="position: relative;">
+                        <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/hk_offer.png" alt="" />
+                        <div id="shopline-section-1691658726756013023f" class="shopline-section">
+                            <div class="section-width">
+                                <div class="product-list-custom-padding__1691658726756013023f">
+                                    <div class="product-list__container">
+                                        <div class="product-list__product" product-id="6513edb153958f001d042434">
+                                            <div class="product-item">
+                                                <product-item product-id="6513edb153958f001d042434"
+                                                    ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
+                                                    class="ng-scope quick-cart-mobile" modal-window-class="">
+                                                    <img class="offerbtn_5 anime_bounce btn-add-to-cart js-btn-add-to-cart"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/hk_BTN_5.png"
+                                                        alt=""
+                                                        style="position: absolute;top: 2%; right: 1%; width: 25%;cursor:pointer;" />
+                                                    <img class="offerbtn_4 anime_bounce btn-add-to-cart js-btn-add-to-cart"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/hk_BTN_4.png"
+                                                        alt=""
+                                                        style="position: absolute;top: 23%; right: 1%; width: 25%;cursor:pointer;" />
+                                                    <img class="offerbtn_3 anime_bounce btn-add-to-cart js-btn-add-to-cart"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/hk_BTN_3.png"
+                                                        alt=""
+                                                        style="position: absolute;top: 42.5%; right: 1%; width: 25%;cursor:pointer;" />
+                                                    <img class="offerbtn_2 anime_bounce btn-add-to-cart js-btn-add-to-cart"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/hk_BTN_2.png"
+                                                        alt=""
+                                                        style="position: absolute;bottom: 22%; right: 1%; width: 25%;cursor:pointer;" />
+                                                    <img class="offerbtn_1 btn-add-to-cart js-btn-add-to-cart"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/hk_BTN_1.png"
+                                                        alt=""
+                                                        style="position: absolute;bottom: 2%; right: 1%; width: 25%;cursor:pointer;" />
+                                                </product-item>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video_box lazyload fadeup">
+                        <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2406/video_title.png" alt="">
+                        <video class="wear_video video_replay"
+                            src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2403new/video_box/02_video.mp4" loop
+                            autoplay muted playsinline>
+                        </video>
+                        <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2406/omega.png" alt="">
+                        <div class="accordion" id="accordionExample" style="margin-top:-2%;">
+                            <div class="accordion-item">
+                                <div class="accordion-button collapsed py-3" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false">
+                                    <img class="video-btn"
+                                        src="https://lunanaturalbra.com/hk/lnubhk/images_0124/video_box/video_btn.png"
+                                        style="cursor: pointer;">
+                                </div>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body p-0">
+                                        <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/video_box/video_content.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="SNS_box lazyload fadeup">
+                        <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2406/SNS-0529_2.png" alt="">
+                        <img class="SNS_gif_01" src="https://lunanaturalbra.com/hk/lnubhk/images_0124/IG_box/IG1.gif"
+                            alt="">
+                        <img class="SNS_gif_02" src="https://lunanaturalbra.com/hk/lnubhk/images_0124/IG_box/IG2.gif"
+                            alt="">
+                    </div>
+
+                    <!-- <div class="IG_box">
+                        <div class="IG_box_line">
+                            <div class="IG_box_title">
+                                <img
+                                    src="https://lunanaturalbra.com/hk/lnubhk/images_0124/IG_box/IG_box_title.png">
+                                <div>
+                                    <p class="IG_box_tag">#友善小胸#空杯救星<br>#Luna晚安內衣</p>
+                                </div>
+                            </div>
+
+                            <div class="IG_box_content_1">
+                                <img style=" margin: 10px;height: 40%;width: 40%;"
+                                    src="https://lunanaturalbra.com/hk/lnubhk/images_0124/IG_box/IG1.gif">
+                                <img style="margin: 10px;height: 40%;width: 40%;"
+                                    src="https://lunanaturalbra.com/hk/lnubhk/images_0124/IG_box/IG2.gif">
+                                <img style="top: -20%;right: 4%;position: absolute;width: 40%;"
+                                    src="https://lunanaturalbra.com/hk/lnubhk/images_0124/IG_box/IG_box_decoration.png">
+                            </div>
+                            <div class="IG_box_content_2">
+                                <img style="width: 80%;"
+                                    src="https://lunanaturalbra.com/hk/lnubhk/images_0124/IG_box/IG3.webp">
+                                <img style="width: 80%;"
+                                    src="https://lunanaturalbra.com/hk/lnubhk/images_0124/IG_box/IG4.webp">
+                                <img style="width: 80%;"
+                                    src="https://lunanaturalbra.com/hk/lnubhk/images_0124/IG_box/IG5.webp">
+                                <img style="width: 80%;"
+                                    src="https://lunanaturalbra.com/hk/lnubhk/images_0124/IG_box/IG6.webp">
+                                <img style="width: 80%;"
+                                    src="https://lunanaturalbra.com/hk/lnubhk/images_0124/IG_box/IG7.webp">
+                                <img style="width: 80%;"
+                                    src="https://lunanaturalbra.com/hk/lnubhk/images_0124/IG_box/IG8.gif">
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="dcard_box">
+                        <div class="dcard_box_line">
+                            <img style="width: 100%;margin-top: 32px;margin-bottom: 32px;"
+                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2403new/dcard_box/dcard_content.png"
+                                alt="">
+                        </div>
+                    </div> -->
+                    <img class="lazyload fadeup" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2406/22.png" alt="" />
+                    <img class="lazyload fadeup" src="https://lunanaturalbra.com/Lshare/images/05.png" alt="" />
+                    <img class="lazyload fadeup" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2403new/23_2.png" alt="" />
+                    <img class="lazyload fadeup" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2403new/23_1.png" alt="" />
+
+                    <!-- <div class="color_box" id="color_box">
+                        <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/06_color/06_color_title.png"
+                            alt="">
+                        <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_title_1.png" alt="">
+                        <div class="color_2btn trigger_01">
+                            <div class="col p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn01_01.png"
+                                    alt="" data-show="01">
+                            </div>
+                            <div class="col p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn01_02.png"
+                                    alt="" data-show="02">
+                            </div>
+                        </div>
+                        <div class="show_01"><img
+                                src="https://lunanaturalbra.com/Lshare/images/06_color/show/01_01.png" alt="">
+                        </div>
+
+                        <div class="color_2btn trigger_02">
+                            <div class="col p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn02_01.png"
+                                    alt="" data-show="01">
+                            </div>
+                            <div class="col p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn02_02.png"
+                                    alt="" data-show="02">
+                            </div>
+                        </div>
+                        <div class="show_02"></div>
+
+                        <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_title_02.png" alt="">
+                        <div class="color_3btn trigger_03">
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn03_01.png"
+                                    alt="" data-show="01">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn03_02.png"
+                                    alt="" data-show="02">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn03_03.png"
+                                    alt="" data-show="03">
+                            </div>
+                        </div>
+                        <div class="show_03"></div>
+
+                        <div class="color_3btn trigger_04">
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/06_color/06_color_btn04_01.png"
+                                    alt="" data-show="01">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn04_02.png"
+                                    alt="" data-show="02">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn04_03.png"
+                                    alt="" data-show="03">
+                            </div>
+                        </div>
+                        <div class="show_04"></div>
+
+                        <div class="color_3btn trigger_05">
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/06_color/06_color_btn05_01.png"
+                                    alt="" data-show="01">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn05_02.png"
+                                    alt="" data-show="02">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/06_color/06_color_btn05_03.png"
+                                    alt="" data-show="03">
+                            </div>
+                        </div>
+                        <div class="show_05"></div>
+
+                        <div class="color_3btn trigger_06">
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/06_color/06_color_btn06_01.png"
+                                    alt="" data-show="01">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/Lshare/images/06_color/06_color_btn06_02.png"
+                                    alt="" data-show="02">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/06_color/06_color_btn06_03.png"
+                                    alt="" data-show="03">
+                            </div>
+                        </div>
+                        <div class="show_06"></div>
+
+                        <div class="color_3btn trigger_07">
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/06_color/06_color_btn07_01.png"
+                                    alt="" data-show="01">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/06_color/06_color_btn07_02.png"
+                                    alt="" data-show="02">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://lunanaturalbra.com/hk/lnubhk/images_0124/06_color/06_color_btn07_03.png"
+                                    alt="" data-show="03">
+                            </div>
+                        </div>
+                        <div class="show_07"></div>
+                    </div> -->
+
+
+                    <img class="lazyload fadeup" src="https://lunanaturalbra.com/hk/lnubhk2/images/10_contact.png" alt="" />
+                    <a href="https://www.facebook.com/lunabra.hk" target="blank">
+                        <picture class="lazyload fadeup">
+                            <source media="(min-width:769px)"
+                                srcset="https://lunanaturalbra.com/hk/lnubhk2/imgs/fb_btn.png">
+                            <source media="(max-width:768px)"
+                                srcset="https://lunanaturalbra.com/hk/lnubhk2/imgs/SP_fb_btn.png">
+                            <img class="img-fluid" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/fb_btn.png">
+                        </picture>
+                    </a>
+                    <img class="lazyload fadeup" src="https://lunanaturalbra.com/Lshare/images/24_HK.png" alt="" />
+
+
+                    <!-- <a id="sizelink"></a> -->
+                    <img  class="lazyload fadeup" id="sizelink" src="https://lunanaturalbra.com/Lshare/images/19.png" alt="" />
+
+
+                    <section class="color_box_layout lazyload fadeup">
+                        <p class="color_box_title">養成美胸從現在開始</p>
+                        <div class="d-flex justify-content-center">
+                            <div class="bg bg_midoffer2 color-content">
+                                <div class="content">
+                                    <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/0816.webp">
+                                    <!-- <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2405color/model_o_27.png"> -->
+                                    <div class="price_text_box">
+                                        <p class="price_text_slogan">尺寸顏色自由搭配</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <img class="lazyload fadeup copybtn" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/offerbanner.png" alt="" style="cursor: pointer;"/>
+                    <div class="offer_box lazyload fadeup" style="position: relative;">
+                        <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/hk_offer.png" alt="" />
+                        <div id="shopline-section-1691658726756013023f" class="shopline-section">
+                            <div class="section-width">
+                                <div class="product-list-custom-padding__1691658726756013023f">
+                                    <div class="product-list__container">
+                                        <div class="product-list__product" product-id="6513edb153958f001d042434">
+                                            <div class="product-item">
+                                                <product-item product-id="6513edb153958f001d042434"
+                                                    ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
+                                                    class="ng-scope quick-cart-mobile" modal-window-class="">
+                                                    <img class="offerbtn_5 anime_bounce btn-add-to-cart js-btn-add-to-cart"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/hk_BTN_5.png"
+                                                        alt=""
+                                                        style="position: absolute;top: 2%; right: 1%; width: 25%;cursor:pointer;" />
+                                                    <img class="offerbtn_4 anime_bounce btn-add-to-cart js-btn-add-to-cart"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/hk_BTN_4.png"
+                                                        alt=""
+                                                        style="position: absolute;top: 23%; right: 1%; width: 25%;cursor:pointer;" />
+                                                    <img class="offerbtn_3 anime_bounce btn-add-to-cart js-btn-add-to-cart"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/hk_BTN_3.png"
+                                                        alt=""
+                                                        style="position: absolute;top: 42.5%; right: 1%; width: 25%;cursor:pointer;" />
+                                                    <img class="offerbtn_2 anime_bounce btn-add-to-cart js-btn-add-to-cart"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/hk_BTN_2.png"
+                                                        alt=""
+                                                        style="position: absolute;bottom: 22%; right: 1%; width: 25%;cursor:pointer;" />
+                                                    <img class="offerbtn_1 btn-add-to-cart js-btn-add-to-cart"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/hk_BTN_1.png"
+                                                        alt=""
+                                                        style="position: absolute;bottom: 2%; right: 1%; width: 25%;cursor:pointer;" />
+                                                </product-item>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        <!-- ▲自由編集箇所▲ -->
+    </div>
+</div>
+<br />
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://viage-lp.github.io/shopline_lnubhkvb2/lnubhkvb2bk20240830/js/bootstrap_custom.js"></script>
+<script src="https://viage-lp.github.io/shopline_lnubhkvb2/lnubhkvb2bk20240830/js/countdown_test_0830.js"></script>
+<!-- <script src="js/countdown.js"></script> -->
+<script src="https://viage-lp.github.io/shopline_lnubhkvb2/lnubhkvb2bk20240830/js/lightbox.js"></script>
+<script src="https://viage-lp.github.io/shopline_lnubhkvb2/lnubhkvb2bk20240830/js/all.js"></script>
+<script src="https://viage-lp.github.io/shopline_lnubhkvb2/lnubhkvb2bk20240830/js/lazyload.js"></script>
+<!-- <script src="js/all.js"></script> -->
+<!-- <script src="js/lazyload.js"></script> -->
+
+<script>
+    // 點選左上角logo不跳轉
+    $('a[href="/"]').click(function (e) {
+        e.preventDefault();
+        return;
+    });
+
+    // 漂浮按鈕
+    $('.sizelinkbtn').click(function (e) {
+        e.preventDefault();
+        let innerheight = window.innerHeight;
+        $('html , body').animate({
+            // scrollTop: $('#sizelink').offset().top - (0.5 * innerheight),
+            scrollTop: $('#sizelink').offset().top - 100,
+        }, 900);
+    });
+
+    //網址帶有錨點的客人，三秒再推一把
+    if (location.hash == "#summer_offer") {
+        setTimeout(() => {
+            $('html , body').animate({
+                scrollTop: $('#summer_offer').offset().top,
+            }, 900);
+        }, 3000)
+    }
+
+    //copy折扣碼 
+    function copybtn(couponcode) {
+        // 複製（利用 Clipboard API 中的寫入功能）
+        navigator.clipboard.writeText(couponcode);
+        confirm(`恭喜您成功領取折扣碼！\n您已複製以下優惠代碼 : ${couponcode}！\n於購物車選擇商品後，於「優惠代碼」欄位輸入 即可享總結帳金額再折HKD$35(NT$150)`)
+    }
+
+    $(".copybtn").on("click", function () {
+        copybtn("SS08LUNA");
+    });
+
+    $('#summer_banner').click(function (e) {
+        e.preventDefault();
+        copybtn("SS08LUNA");
+        let innerheight = window.innerHeight;
+        $('html , body').animate({
+            // scrollTop: $('#sizelink').offset().top - (0.5 * innerheight),
+            scrollTop: $('#summer_event').offset().top - 100,
+        }, 900);
+    });
+
+    $('#summer_event').click(function (e) {
+        e.preventDefault();
+        copybtn("SS08LUNA");
+        let innerheight = window.innerHeight;
+        $('html , body').animate({
+            // scrollTop: $('#sizelink').offset().top - (0.5 * innerheight),
+            scrollTop: $('#summer_offer').offset().top - 100,
+        }, 900);
+    });
+</script>
+<script>
+    //客人評論區塊
+    document.getElementById(`customer-1`).addEventListener('load', function () {
+        // for(i=1;i<=3;i++){
+        // console.log(i);
+        // console.log(document.getElementById(`customer-1`))
+
+        let customerFrame = document.getElementById(`customer-1`);
+        let customerContent = customerFrame.contentWindow.document.body.querySelector(".product-reviews-container");
+        console.log(customerContent)
+        // // 清空 iframe 中的内容
+        customerFrame.contentWindow.document.body.innerHTML = '';
+        // // 将 .product-reviews-container 元素添加到 iframe 中
+        customerFrame.contentWindow.document.body.appendChild(customerContent);
+
+        // 输出 customerContent 内容，仅供测试
+        // }
+    });
+
+    //carousel
+    $(document).ready(function () {
+        let items = document.querySelectorAll(".carousel .carousel-item");
+
+        items.forEach((el) => {
+            const minPerSlide = 3
+            let next = el.nextElementSibling
+            for (var i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    // wrap carousel by using first child
+                    next = items[0]
+                }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+
+        })
+    });
+</script>
+<!-- 抓取網址參數存到cookie -->
+<script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script>
+    let getUrlString = location.href;
+    let url = new URL(getUrlString);
+    let url_cookie = url.search;
+    $.cookie('url_cookie', url_cookie , { expires: 1, path: '/' });
+</script>

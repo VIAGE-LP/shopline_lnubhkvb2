@@ -1,4 +1,4 @@
-const day_start = new Date('2024/09/03 16:10:00'); // 天倒數 開始時間
+const day_start = new Date('2024/09/03 16:20:00'); // 天倒數 開始時間
 const sec_start = new Date('2024/09/03 16:25:00'); // 秒倒數 開始時間
 const end = new Date('2024/09/04 23:59:59'); // 結束時間
 let now = new Date();

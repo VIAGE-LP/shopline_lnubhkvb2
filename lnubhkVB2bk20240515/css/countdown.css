@@ -1,0 +1,229 @@
+/********タイマー********/
+
+:root {
+    /* 背景圖修改請至 */
+    /* ALL */
+    --circleColor:#f5597b;/* 倒數計時器圓圈背景色 */
+    /*--circleBorderColor:3px #8c5b07 solid; 倒數計時器圓圈邊框顏色 */
+    --circleTextColor: #ffffff;/* 倒數計時器文字顏色 */
+    --circleTextWeight: 600;/* 倒數計時器文字寬度*/
+    --circleTextFamily: Impact, Charcoal;/* 倒數計時器文字字型 */
+
+    /* 秒數版本*/
+    --circleSecPadding: 8px;/* 倒數計時器秒數圓圈之間邊距 */
+    /* --decorationSecImg:url(../img/timer/timer_decorate.png)* 倒數計時器秒數裝飾圖片 
+    --decorationSecImgSize:100%; 倒數計時器秒數裝飾圖片大小 
+    --decorationSecTop:-20%; 調整到數計時器裝飾的上下位置(倒數計時器裝飾距離main-content上方的高度) 
+    --decorationSecLeft:100%; 調整到數計時器裝飾的左右位置(倒數計時器裝飾距離main-content上方的高度)  */
+
+    /* 天數版本 */
+    --titleAlign:end;/* 倒數計時器標題置中:center/置左:start/置右:end */
+    /* --decorationDayImg:url(../img/timer/timer_decorate.png); 倒數計時器秒數裝飾圖片 
+    --decorationDayImgSize:100%; 倒數計時器秒數裝飾圖片大小 
+    --decorationDayTop:-3%; 調整到數計時器裝飾的上下位置(倒數計時器裝飾距離main-content上方的高度) 
+    --decorationDayLeft:40%; 調整到數計時器裝飾的左右位置(倒數計時器裝飾距離main-content上方的高度)  */
+
+    /* PC */
+    --BGPCImg:url(https://lunanaturalbra.com/hk/lnubhk2/imgs/240502/timer/sp_timmer.png);/* PC版背景,PS輸出大小750*200 */
+    --BGPCImgposition:top right;/* 背景位置top:對齊上方/right:對齊右方 */
+    --titlePCImg:90%;/* 倒數計時器標題大小,單位需使用% */
+    --titlePCPosition:3fr 1fr;/* 倒數計時器標題與倒數計時器的排版比例*/
+    --circlePCFontSize: 5rem; /* 圓形數字文字大小 */
+    --circleUnitPCFontSize:1.5rem;/* 單位文字大小 */
+    --circlePCitem: 4;/* 若需要調整秒數倒數計時數量,需設置,記得先將html該單位設置為class="timer-box"層級設置為display:none */
+    --circlePCWidth: 85px 1fr;/* 倒數計時器圓圈寬度*/
+    --circlePCHeight: 85px;    /* 倒數計時器高度 */
+    --circlesPCMargin: -12px; /* 倒數計時器數字與單位之間的距離,負數越多數字與單位越靠近 */
+    /* PC天數版本 */
+    --circleDayPCPadding:10px;/* 倒數計時器標題與圓圈之間邊距 */
+
+    /* MD */
+    /*--BGMDImgposition:85% 100%; 背景位置top:對齊上方/right:對齊右方 */
+    --titleMDImg:50vw;/* 倒數計時器標題大小,單位需使用vw */
+    --titleMDPosition:2fr 1fr;/* 倒數計時器標題與倒數計時器的排版比例*/
+    --circleMDFontSize:5rem;/* 圓形數字文字大小 */
+    --circleUnitMDFontSize:1rem;/* 單位文字大小 */
+    --circleMDWidth: 12vw 1fr;/* 倒數計時器圓圈寬度*/
+    --circlaMDHeight: calc(12vw);/* 倒數計時器高度 */
+
+    /* SP */
+    --BGSPImgposition:top right;/* 背景位置top:對齊上方/right:對齊右方 */
+    --titleSPImg:60vw;/* 倒數計時器標題大小,單位需使用vw */
+    --titleSPPosition:3fr 1fr;/* 倒數計時器標題與倒數計時器的排版比例*/
+    --circleSPFontSize: 2.5rem;/* 圓形數字文字大小 */
+    --circleSPWidth: 12vw 1fr;/* 倒數計時器圓圈寬度*/
+    --circlaSPHeight: calc(12vw);/* 倒數計時器高度 */
+    --circlesSPMargin: -7px; /* 倒數計時器數字與單位之間的距離,負數越多數字與單位越靠近 */
+    /* SP天數版本 */
+    --circleDaySPPadding:16px;/* 倒數計時器標題與圓圈之間邊距*/
+}
+
+.cdtimer_box{
+    display: flex;
+    justify-content: center;
+}
+#cdtimer,
+#cdtimer_day {
+    display: none;
+    font-family: var(--circleTextFamily);
+    background-image: var(--BGPCImg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: var(--BGPCImgposition);
+    /* LUNA手機版 */
+    /* width: 640px; */
+    /* SHOPLINE版本 */
+    max-width: 640px;
+    width: 100%;
+}
+
+#cdtimer .countdown {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding: 12px;
+    grid-gap: 8px;
+}
+
+#cdtimer .main-content {
+    display: grid;
+    grid-template-columns: repeat(var(--circlePCitem), 85px);
+    /* 需要調整倒數計時器寬度時,調整後面的數字*/
+    grid-gap: var(--circleSecPadding);
+    position: relative;
+    justify-items: center;
+    align-items: center;
+}
+/* #cdtimer .main-content::after{
+    content:"";
+    position: absolute;
+    top: var(--decorationSecTop);
+    left: var(--decorationSecLeft);
+    width: 30px;
+    height: 30px;
+    background-size: var(--decorationSecImgSize);
+    background-image: var(--decorationSecImg);
+    background-repeat: no-repeat;
+} */
+
+#cdtimer .timer-box,#cdtimer_day .timer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(100%);
+    height: var(--circlePCHeight);
+    font-size: var(--circlePCFontSize);
+    font-weight: var(--circleTextWeight);
+    color: var(--circleTextColor);
+    border-radius: 50%;
+    background: var(--circleColor);
+    /* border: var(--circleBorderColor); */
+}
+
+#cdtimer .timer-box .number,#cdtimer_day .timer-box .number {
+    margin-bottom: var(--circlesPCMargin);
+}
+
+#cdtimer .timer-box .name,#cdtimer_day .timer-box .name {
+    font-size: var(--circleUnitPCFontSize);
+}
+
+#cdtimer_day .countdown {
+    display: grid;
+    grid-template-columns:var(--titlePCPosition);
+    grid-gap: var(--circleDayPCPadding);
+    align-items: center;
+    padding: 12px;
+}
+
+#cdtimer_day picture{
+    justify-self: var(--titleAlign);
+}
+
+#cdtimer_day .main-content {
+    display: grid;
+    position: relative;
+    grid-template-columns: var(--circlePCWidth);
+    /* 需要調整倒數計時器寬度時,調整前面的數字*/
+}
+/* #cdtimer_day .main-content::after{
+    content:"";
+    position: absolute;
+    top: var(--decorationDayTop);
+    left: var(--decorationDayLeft);
+    width: 30px;
+    height: 30px;
+    background-size: var(--decorationDayImgSize);
+    background-image: var(--decorationDayImg);
+    background-repeat: no-repeat;
+} */
+
+#cdtimer .timer-title,#cdtimer_day .timer-title {
+    width: var(--titlePCImg);
+}
+/* MD */
+@media screen and (max-width: 768px) {
+    #cdtimer,#cdtimer_day{
+        width: 768px;
+        /* background-position: var(--BGMDImgposition); */
+    }
+    #cdtimer .timer-title,#cdtimer_day .timer-title {
+        width: var(--titleMDImg);
+    }
+    #cdtimer .main-content {
+        grid-template-columns: repeat(var(--circlePCitem), 14vw);
+    /* 需要調整倒數計時器寬度時,調整後面的數字,MD版本單位須使用vw去適應不同的載具*/
+    }
+    #cdtimer_day .main-content {
+        grid-template-columns: var(--circleMDWidth);
+    /* 需要調整倒數計時器寬度時,調整前面的數字,MD版本單位須使用vw去適應不同的載具*/
+    }
+    #cdtimer_day .countdown{
+        grid-template-columns:var(--titleMDPosition);
+        grid-gap:var(--circleDaySPPadding);
+    }
+    #cdtimer_day .main-content::after,#cdtimer .main-content::after{
+        width: 0px!important;
+        height: 0px!important;
+    }
+    #cdtimer .timer-box,#cdtimer_day .timer-box {
+        height: var(--circlaMDHeight);
+        font-size: var(--circleMDFontSize);
+    }
+
+    #cdtimer .timer-box .name,#cdtimer_day .timer-box .name {
+        font-size: var(--circleUnitMDFontSize);
+    }
+}
+
+/* SP */
+@media screen and (max-width: 576px) {
+    #cdtimer,#cdtimer_day{
+        width: 100%;
+        background-position: var(--BGSPImgposition);
+    }
+    #cdtimer .main-content {
+        grid-template-columns: repeat(var(--circlePCitem), 12vw);
+    /* 需要調整倒數計時器寬度時,調整後面的數字,SP版本單位須使用vw去適應不同的載具*/
+    }
+    #cdtimer_day .main-content {
+        grid-template-columns: var(--circleSPWidth);
+    /* 需要調整倒數計時器寬度時,調整前面的數字,SP版本單位須使用vw去適應不同的載具*/
+    }
+    #cdtimer_day .countdown{
+        grid-template-columns: var(--titleSPPosition);
+        grid-gap:var(--circleDaySPPadding);
+    }
+    #cdtimer .timer-title, #cdtimer_day .timer-title{
+        width: var(--titleSPImg);
+    }
+    #cdtimer .timer-box,#cdtimer_day .timer-box {
+        height: var(--circlaSPHeight);
+        font-size: var(--circleSPFontSize);
+    }
+
+    #cdtimer .timer-box .number,#cdtimer_day .timer-box .number {
+        margin-bottom: var(--circlesSPMargin);
+    }
+}

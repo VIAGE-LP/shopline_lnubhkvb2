@@ -65,7 +65,7 @@ $(document).ready(function () {
             fvvideo.onended = function () {
                 if (first) {
                     $('html , body').animate({
-                        scrollTop: $('#summer').offset().top,
+                        scrollTop: $('#fv_video_end').offset().top,
                     }, 900);
                     first = false;
                     fvvideo.loop = true;

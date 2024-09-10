@@ -1188,7 +1188,7 @@
     function copybtn(couponcode) {
         // 複製（利用 Clipboard API 中的寫入功能）
         navigator.clipboard.writeText(couponcode);
-        confirm(`恭喜您成功領取折扣碼！\n您已複製以下優惠代碼 : ${couponcode}\n20分鐘內選擇商品加入購物車後，點選「訂單結帳」，進入結帳畫面\n點選「使用優惠代碼」，並輸入：${couponcode}\n即可享有新客限定優惠 = 網頁價格再折HKD$40(NT$160)`)
+        confirm(`恭喜您成功領取折扣碼！\n您已複製以下優惠代碼 : ${couponcode}！\n20分鐘內選擇商品加入購物車後，點選「訂單結帳」，進入結帳畫面\n點選「使用優惠代碼」，並輸入：${couponcode}\n即可享有新客限定優惠 = 網頁價格再折HKD$40(NT$160)`)
     }
 
     $(".copybtn").on("click", function () {

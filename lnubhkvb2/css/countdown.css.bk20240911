@@ -3,7 +3,7 @@
 :root {
     /* 背景圖修改請至 */
     /* ALL */
-    --circleColor: #d31e5e;/* 倒數計時器圓圈背景色 */
+    --circleColor: #e43d3c;/* 倒數計時器圓圈背景色 */
     --circleTextColor: #ffffff;/* 倒數計時器文字顏色 */
     --circleTextFamily: Impact, Charcoal;/* 倒數計時器文字字型 */
 
@@ -22,11 +22,11 @@
     --decorationDayLeft:40%; 調整到數計時器裝飾的左右位置(倒數計時器裝飾距離main-content上方的高度)  */
 
     /* PC */
-    --BGPCImg:url(https://viage-lp.github.io/shopline_lnubhkvb2/lnubhkvb2/images/timer/sp_timmer.png);/* PC版背景,PS輸出大小750*200 */
+    --BGPCImg:url(https://viage-lp.github.io/shopline_lnubhkvb2/images/timer/sp_timmer.png);/* PC版背景,PS輸出大小750*200 */
     --BGPCImgposition: top right;/* 背景位置top:對齊上方/right:對齊右方 */
     --titlePCImg:calc(90%);/* 倒數計時器標題大小,單位需使用% */
-    --circlePCFontSize: 2.5rem; /* 圓形數字文字大小 */
-    --circleUnitPCFontSize:1rem;/* 單位文字大小 */
+    --circlePCFontSize: 3.5rem; /* 圓形數字文字大小 */
+    --circleUnitPCFontSize:1.5rem;/* 單位文字大小 */
     --circlePCitem: 4;/* 若需要調整秒數倒數計時數量,需設置,記得先將html該單位設置為class="timer-box"層級設置為display:none */
     --circlePCWidth: calc(95%);/* 倒數計時器圓圈寬度,目前固定為距離邊距100%,需根據底下版型寬度一同調整(該參數無法設預設值)*/
     --circlePCHeight: 74px;    /* 倒數計時器高度 */

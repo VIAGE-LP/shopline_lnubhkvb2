@@ -488,7 +488,6 @@
         background: url(https://lunanaturalbra.com/hk/lnubhk2/imgs/offer2/midoffer1.png) 100% center;
         padding: 5% 2%;
     }
-
     /* customer_box區塊 */
 
     /* SNS_box */
@@ -509,7 +508,6 @@
         left: 33%;
         top: 44.8%;
     }
-
     /* SNS_box */
 </style>
 
@@ -569,8 +567,7 @@
         }
     </style>
     <div class="float_btn">
-        <div id="coupon_countdown"
-            style="background-color: #d31f5e;width:65px;margin:0 auto;padding: 8px 8px 4px 8px;border-radius: 11px;cursor: pointer;display:none;">
+        <div id="coupon_countdown" style="background-color: #d31f5e;width:65px;margin:0 auto;padding: 8px 8px 4px 8px;border-radius: 11px;cursor: pointer;display:none;">
             <svg fill="#FDF5DE" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 0 74 38">
                 <image id="形狀_2" data-name="形狀 2" width="74" height="38"
@@ -583,8 +580,7 @@
                 <div class="coupon_seconds_number"></div>
             </div>
         </div>
-        <img class="sizelinkbtn" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240910/gotop.png" alt=""
-            style="width:100%;cursor: pointer;">
+        <img class="sizelinkbtn" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240910/gotop.png" alt="" style="width:100%;cursor: pointer;">
     </div>
     <!-- 漂浮按鈕 -->
 
@@ -717,10 +713,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <a id="popup_scroll"></a> -->
-            <img id="popup_scroll" class="lazyload fadeup"
-                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2406/15_01_2.png" alt="" />
+            <img class="lazyload fadeup" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2406/15_01_2.png" alt="" />
             <img class="lazyload fadeup" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2406/15_02.png" alt="" />
             <section class="customer_box lazyload fadeup">
                 <div class="content">
@@ -995,9 +988,8 @@
 
 
 
-            <img class="lazyload fadeup copybtn"
-                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/hk_offer_banner.png" alt=""
-                style="cursor: pointer;" />
+            <img class="lazyload fadeup copybtn" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/hk_offer_banner.png"
+                alt="" style="cursor: pointer;" />
             <div class="offer_box lazyload fadeup" style="position: relative;">
                 <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/hk_offer.png" alt="" />
                 <div id="shopline-section-1691658726756013023f" class="shopline-section">
@@ -1010,19 +1002,24 @@
                                             ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
                                             class="ng-scope quick-cart-mobile" modal-window-class="">
                                             <img class="offerbtn_5 anime_bounce btn-add-to-cart js-btn-add-to-cart"
-                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_5.png" alt=""
+                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_5.png"
+                                                alt=""
                                                 style="position: absolute;top: 2%; right: 1%; width: 25%;cursor:pointer;" />
                                             <img class="offerbtn_4 anime_bounce btn-add-to-cart js-btn-add-to-cart"
-                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_4.png" alt=""
+                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_4.png"
+                                                alt=""
                                                 style="position: absolute;top: 23%; right: 1%; width: 25%;cursor:pointer;" />
                                             <img class="offerbtn_3 anime_bounce btn-add-to-cart js-btn-add-to-cart"
-                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_3.png" alt=""
+                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_3.png"
+                                                alt=""
                                                 style="position: absolute;top: 42.5%; right: 1%; width: 25%;cursor:pointer;" />
                                             <img class="offerbtn_2 anime_bounce btn-add-to-cart js-btn-add-to-cart"
-                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_2.png" alt=""
+                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_2.png"
+                                                alt=""
                                                 style="position: absolute;bottom: 22%; right: 1%; width: 25%;cursor:pointer;" />
                                             <img class="offerbtn_1 btn-add-to-cart js-btn-add-to-cart"
-                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_1.png" alt=""
+                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_1.png"
+                                                alt=""
                                                 style="position: absolute;bottom: 2%; right: 1%; width: 25%;cursor:pointer;" />
                                         </product-item>
                                     </div>
@@ -1096,9 +1093,8 @@
                 </div>
             </section>
 
-            <img class="lazyload fadeup copybtn"
-                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/hk_offer_banner.png" alt=""
-                style="cursor: pointer;" />
+            <img class="lazyload fadeup copybtn" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/hk_offer_banner.png"
+                alt="" style="cursor: pointer;" />
             <div class="offer_box lazyload fadeup" style="position: relative;">
                 <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/hk_offer.png" alt="" />
                 <div id="shopline-section-1691658726756013023f" class="shopline-section">
@@ -1111,19 +1107,24 @@
                                             ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
                                             class="ng-scope quick-cart-mobile" modal-window-class="">
                                             <img class="offerbtn_5 anime_bounce btn-add-to-cart js-btn-add-to-cart"
-                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_5.png" alt=""
+                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_5.png"
+                                                alt=""
                                                 style="position: absolute;top: 2%; right: 1%; width: 25%;cursor:pointer;" />
                                             <img class="offerbtn_4 anime_bounce btn-add-to-cart js-btn-add-to-cart"
-                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_4.png" alt=""
+                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_4.png"
+                                                alt=""
                                                 style="position: absolute;top: 23%; right: 1%; width: 25%;cursor:pointer;" />
                                             <img class="offerbtn_3 anime_bounce btn-add-to-cart js-btn-add-to-cart"
-                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_3.png" alt=""
+                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_3.png"
+                                                alt=""
                                                 style="position: absolute;top: 42.5%; right: 1%; width: 25%;cursor:pointer;" />
                                             <img class="offerbtn_2 anime_bounce btn-add-to-cart js-btn-add-to-cart"
-                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_2.png" alt=""
+                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_2.png"
+                                                alt=""
                                                 style="position: absolute;bottom: 22%; right: 1%; width: 25%;cursor:pointer;" />
                                             <img class="offerbtn_1 btn-add-to-cart js-btn-add-to-cart"
-                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_1.png" alt=""
+                                                src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240911/BTN_1.png"
+                                                alt=""
                                                 style="position: absolute;bottom: 2%; right: 1%; width: 25%;cursor:pointer;" />
                                         </product-item>
                                     </div>
@@ -1138,8 +1139,7 @@
 </div>
 
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://viage-lp.github.io/shopline_lnubhkvb2/lnubhkvb2/js/bootstrap_custom.js"></script>
 <script src="https://viage-lp.github.io/shopline_lnubhkvb2/lnubhkvb2/js/countdown.js"></script>
 <!-- <script src="js/countdown.js"></script> -->
@@ -1231,36 +1231,18 @@
         $("#shopline_popup").hide();
     });
 
-    // 監測popup_scroll錨點，超過就執行跳出popup(尚未領取)
-    const popupscroll_options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: Array(100).fill().map((val, idx) => idx * 0.01),
-    };
+    let now_time = new Date();
+    let scroll_first = true;
 
-    function popup_scroll(entries, observer) {
-        const popupscrollEnd = $('#popup_scroll').position().top;
-        const scrollPos = $(window).scrollTop();
-        let scroll_first = true;
-
-        console.log(popupscrollEnd, scrollPos);
-        if (popupscrollEnd < scrollPos) {
+    //判斷 localStorage 中的 localCoupon 是否已經有值
+    if (!localCoupon) {
+        window.onscroll = function () {
             if (scroll_first) {
                 $("#shopline_popup").show();
                 $("#popup_img_1").show();
-                observer.unobserve(popupscroll_target);
             }
             scroll_first = false;
-        }
-    }
-    const popupscroll_target = document.getElementById("popup_scroll");
-    const popupscroll_observer = new IntersectionObserver(popup_scroll, popupscroll_options);
-
-    let now_time = new Date();
-    //判斷 localStorage 中的 localCoupon 是否已經有值
-    if (!localCoupon) {
-        //監測popup_scroll錨點，超過就執行跳出popup(尚未領取)
-        popupscroll_observer.observe(popupscroll_target);
+        };
 
         //每1秒刷新一次
         setInterval(() => {
@@ -1291,8 +1273,13 @@
                 }
             }, 1000);
         } else {
-            //監測popup_scroll錨點，超過就執行跳出popup(尚未領取)
-            popupscroll_observer.observe(popupscroll_target);
+            window.onscroll = function () {
+                if (scroll_first) {
+                    $("#shopline_popup").show();
+                    $("#popup_img_1").show();
+                }
+                scroll_first = false;
+            };
 
             //每1秒刷新一次
             setInterval(() => {

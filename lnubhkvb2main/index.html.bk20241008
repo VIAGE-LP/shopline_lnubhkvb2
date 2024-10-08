@@ -575,7 +575,7 @@
                     <div class="fv_video_box">
                         <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/hk_fv.png" alt="" />
                         <video id="fv_video" src="https://lunanaturalbra.com/hk/lnubhk/images_0124/fv/01_video.mp4"
-                            autoplay muted playsinline loop>
+                            autoplay muted playsinline>
                             <source src="https://lunanaturalbra.com/hk/lnubhk/images_0124/fv/01_video.mov"
                                 type="video/mp4" />
                             <source src="https://lunanaturalbra.com/hk/lnubhk/images_0124/fv/01_video.ogg"

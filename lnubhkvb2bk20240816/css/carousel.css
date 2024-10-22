@@ -1,0 +1,131 @@
+.card {
+    background-color: #fff0 !important;
+    border: none !important;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {}
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.nav-link {
+    padding: 0.35rem 0.35rem !important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: rgba(13, 110, 252, 0) !important;
+    border: 3px solid #000 !important;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.carousel-item {
+    transition: none !important;
+}
+
+
+/* medium and up screens */
+
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(33%);
+    }
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-33%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0%);
+}
+
+.bg_modelImg--mid {
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    width: 90%;
+}
+
+.line_loop {
+    position: absolute;
+    bottom: 1.5%;
+    width: 97%;
+    left: 1.5%;
+}
+
+.bg_modelCarousel--mid {
+    position: absolute;
+    bottom: 1.5%;
+    width: 97%;
+    left: 1.5%;
+}
+
+.bg_modelCarousel--final {
+    position: absolute;
+    top: 23.5%;
+    width: 97%;
+    left: 1.5%;
+}
+
+.bg_colorBtn--mid {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    width: 63%;
+    margin: 0 auto;
+    width: 100%;
+    /* background: #000; */
+    padding: 0 15%;
+    box-sizing: border-box;
+}
+
+.bg_colorBtn--mid .nav-link {
+    /* padding: 2% 2%; */
+    /* padding: 0 !important; */
+    /* margin: 5%; */
+}
+
+.nav-pills .nav-link.active {
+    border-width: 5px !important;
+    border-radius: 10px;
+}
+
+.nav-pill_new {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    /* padding: 0 4% !important; */
+}
+
+.nav-pill_new .nav-item {
+    width: calc(100%/7);
+    padding: 1%;
+    /* margin: 1%; */
+}
+
+.nav-pill_new .nav-item img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:576px) {
+    .nav-pill_new .nav-item {
+        padding: .5%;
+    }
+    .nav-pills .nav-link.active {
+        border-width: 2px !important;
+        border-radius: 5px;
+    }
+    .nav-link {
+        padding: 0.1rem 0.1rem !important;
+    }
+}

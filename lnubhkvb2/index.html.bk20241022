@@ -140,7 +140,7 @@
     #fv_video {
     position: absolute;
     width: 100%;
-    top: 6.5%;
+    top: 0%;
     }
 
     header {
@@ -571,11 +571,11 @@
                 </div>
                 <div class="fv">
                     <!-- <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2405color/02_banner.png" alt="" /> -->
-                    <img id="summer_banner" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/hk_banner.png" alt="" style="cursor: pointer;">
+                    <img id="summer_banner" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/hk_banner.png" alt="" style="cursor: pointer;">
                     <div class="fv_video_box">
-                        <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/01_bg_0829.png" alt="" />
+                        <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/hk_fv.png" alt="" />
                         <video id="fv_video" src="https://lunanaturalbra.com/hk/lnubhk/images_0124/fv/01_video.mp4"
-                            autoplay muted playsinline>
+                            autoplay muted playsinline loop>
                             <source src="https://lunanaturalbra.com/hk/lnubhk/images_0124/fv/01_video.mov"
                                 type="video/mp4" />
                             <source src="https://lunanaturalbra.com/hk/lnubhk/images_0124/fv/01_video.ogg"
@@ -1045,11 +1045,12 @@
                         <div class="d-flex justify-content-center">
                             <div class="bg bg_midoffer2 color-content">
                                 <div class="content">
-                                    <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240902/27OFF_240902.png">
+                                    <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/0930_38OFF.png">
+                                    <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/hk_offer_banner.png" alt="" />
                                     <!-- <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2405color/model_o_27.png"> -->
-                                    <div class="price_text_box">
+                                    <!-- <div class="price_text_box">
                                         <p class="price_text_slogan">尺寸顏色自由搭配</p>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -1059,7 +1060,7 @@
                     
                     <!-- <img class="lazyload fadeup copybtn" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/offerbanner.png" alt="" style="cursor: pointer;"/> -->
                     <div class="offer_box lazyload fadeup" style="position: relative;">
-                        <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/hk_offer.png" alt="" />
+                        <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/hk_offer.png" alt="" />
                         <div id="shopline-section-1691658726756013023f" class="shopline-section">
                             <div class="section-width">
                                 <div class="product-list-custom-padding__1691658726756013023f">
@@ -1070,23 +1071,23 @@
                                                     ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
                                                     class="ng-scope quick-cart-mobile" modal-window-class="">
                                                     <img class="offerbtn_5 anime_bounce btn-add-to-cart js-btn-add-to-cart"
-                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/hk_BTN_5.png"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/hk_BTN_5.png"
                                                         alt=""
                                                         style="position: absolute;top: 2%; right: 1%; width: 25%;cursor:pointer;" />
                                                     <img class="offerbtn_4 anime_bounce btn-add-to-cart js-btn-add-to-cart"
-                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/hk_BTN_4.png"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/hk_BTN_4.png"
                                                         alt=""
                                                         style="position: absolute;top: 23%; right: 1%; width: 25%;cursor:pointer;" />
                                                     <img class="offerbtn_3 anime_bounce btn-add-to-cart js-btn-add-to-cart"
-                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/hk_BTN_3.png"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/hk_BTN_3.png"
                                                         alt=""
                                                         style="position: absolute;top: 42.5%; right: 1%; width: 25%;cursor:pointer;" />
                                                     <img class="offerbtn_2 anime_bounce btn-add-to-cart js-btn-add-to-cart"
-                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/hk_BTN_2.png"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/hk_BTN_2.png"
                                                         alt=""
                                                         style="position: absolute;bottom: 22%; right: 1%; width: 25%;cursor:pointer;" />
                                                     <img class="offerbtn_1 btn-add-to-cart js-btn-add-to-cart"
-                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/hk_BTN_1.png"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/hk_BTN_1.png"
                                                         alt=""
                                                         style="position: absolute;bottom: 2%; right: 1%; width: 25%;cursor:pointer;" />
                                                 </product-item>
@@ -1313,11 +1314,12 @@
                         <div class="d-flex justify-content-center">
                             <div class="bg bg_midoffer2 color-content">
                                 <div class="content">
-                                    <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240902/27OFF_240902.png">
+                                    <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/0930_38OFF.png">
+                                    <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/hk_offer_banner.png" alt="" />
                                     <!-- <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2405color/model_o_27.png"> -->
-                                    <div class="price_text_box">
+                                    <!-- <div class="price_text_box">
                                         <p class="price_text_slogan">尺寸顏色自由搭配</p>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -1325,7 +1327,7 @@
 
                     <!-- <img class="lazyload fadeup copybtn" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/offerbanner.png" alt="" style="cursor: pointer;"/> -->
                     <div class="offer_box lazyload fadeup" style="position: relative;">
-                        <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/hk_offer.png" alt="" />
+                        <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/hk_offer.png" alt="" />
                         <div id="shopline-section-1691658726756013023f" class="shopline-section">
                             <div class="section-width">
                                 <div class="product-list-custom-padding__1691658726756013023f">
@@ -1336,23 +1338,23 @@
                                                     ng-class="{'quick-cart-mobile': isMobileTabletWidth()}"
                                                     class="ng-scope quick-cart-mobile" modal-window-class="">
                                                     <img class="offerbtn_5 anime_bounce btn-add-to-cart js-btn-add-to-cart"
-                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/hk_BTN_5.png"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/hk_BTN_5.png"
                                                         alt=""
                                                         style="position: absolute;top: 2%; right: 1%; width: 25%;cursor:pointer;" />
                                                     <img class="offerbtn_4 anime_bounce btn-add-to-cart js-btn-add-to-cart"
-                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/hk_BTN_4.png"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/hk_BTN_4.png"
                                                         alt=""
                                                         style="position: absolute;top: 23%; right: 1%; width: 25%;cursor:pointer;" />
                                                     <img class="offerbtn_3 anime_bounce btn-add-to-cart js-btn-add-to-cart"
-                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/hk_BTN_3.png"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/hk_BTN_3.png"
                                                         alt=""
                                                         style="position: absolute;top: 42.5%; right: 1%; width: 25%;cursor:pointer;" />
                                                     <img class="offerbtn_2 anime_bounce btn-add-to-cart js-btn-add-to-cart"
-                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/hk_BTN_2.png"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/hk_BTN_2.png"
                                                         alt=""
                                                         style="position: absolute;bottom: 22%; right: 1%; width: 25%;cursor:pointer;" />
                                                     <img class="offerbtn_1 btn-add-to-cart js-btn-add-to-cart"
-                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/hk_BTN_1.png"
+                                                        src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240930/hk_BTN_1.png"
                                                         alt=""
                                                         style="position: absolute;bottom: 2%; right: 1%; width: 25%;cursor:pointer;" />
                                                 </product-item>

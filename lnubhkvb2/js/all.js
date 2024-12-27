@@ -51,9 +51,9 @@ $(document).ready(function () {
     };
 
     function fv_scroll(entries, observer) {
-        const videoEnd = $('#fv_video_end').position().top;
+        const fvvideo = document.getElementById("fv_video");
+        const videoEnd = $(".fv_video_box").position().top + $(".fv_video_box").outerHeight();
         const scrollPos = $(window).scrollTop();
-        let fvvideo = document.getElementById("fv_video");
         let first = true;
 
         if (videoEnd < scrollPos) {
@@ -64,9 +64,7 @@ $(document).ready(function () {
             // fv影片播放完第一遍往下滑，之後loop
             fvvideo.onended = function () {
                 if (first) {
-                    $('html , body').animate({
-                        scrollTop: $('#fv_video_end').offset().top,
-                    }, 900);
+                    document.querySelector(".fv_video_box").scrollIntoView({ behavior: "smooth", block: "end" })
                     first = false;
                     fvvideo.loop = true;
                     // console.log(first, fvvideo);
@@ -79,7 +77,7 @@ $(document).ready(function () {
     }
     const fv_target = document.querySelector(".fv_video_box");
     const fv_observer = new IntersectionObserver(fv_scroll, fv_options);
-    fv_observer.observe(fv_target)
+    fv_observer.observe(fv_target);
 });
 
 //客人評論區塊

@@ -577,15 +577,34 @@
                     <style>
                         .banner_text_top{
                             font-size: 27px;
-                            margin: 0 0 8px 0;
+                            margin: 0 0 20px 0;
+                            font-family: 'Noto Sans TC', sans-serif;
                         }
                         .banner_text_bottom{
                             font-size: 36px;
                             margin: 0;
                             letter-spacing: 4px;
+                            font-family: 'Noto Sans TC', sans-serif;
                         }
                         .text_small{
                             font-size: 27px;
+                            font-family: 'Noto Sans TC', sans-serif;
+                        }
+                        .lastday{
+                            font-family: 'Noto Sans TC', sans-serif;
+                        }
+                        @media screen and (max-width:500px) {
+                            .banner_text_top{
+                                font-size: 18px;
+                                margin: 0 0 7px 0;
+                            }
+                            .banner_text_bottom{
+                                font-size: 24px;
+                                letter-spacing: 2px;
+                            }
+                            .text_small{
+                                font-size: 18px;
+                            }
                         }
                     </style>
                     <div class="banner_box" style="position: relative;">
@@ -596,7 +615,7 @@
                         </div>
                     </div>
                     <!-- banner 自動抓取月份最後一天 end -->
-                    
+
                     <div class="fv_video_box">
                         <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/01_bg_0829.png" alt="" />
                         <video id="fv_video" src="https://lunanaturalbra.com/hk/lnubhk/images_0124/fv/01_video.mp4"
@@ -1417,62 +1436,13 @@
         }, 900);
     });
 
-    //網址帶有錨點的客人，三秒再推一把
-    if (location.hash == "#summer_offer") {
-        setTimeout(() => {
-            $('html , body').animate({
-                scrollTop: $('#summer_offer').offset().top,
-            }, 900);
-        }, 3000)
-    }
-
     //copy折扣碼 
     // function copybtn(couponcode) {
     //     // 複製（利用 Clipboard API 中的寫入功能）
     //     navigator.clipboard.writeText(couponcode);
     //     confirm(`恭喜您成功領取折扣碼！\n您已複製以下優惠代碼 : ${couponcode}！\n於購物車選擇商品後，於「優惠代碼」欄位輸入 即可享總結帳金額再折HKD$35(NT$150)`)
     // }
-</script>
-<script>
-    //客人評論區塊
-    document.getElementById(`customer-1`).addEventListener('load', function () {
-        // for(i=1;i<=3;i++){
-        // console.log(i);
-        // console.log(document.getElementById(`customer-1`))
 
-        let customerFrame = document.getElementById(`customer-1`);
-        let customerContent = customerFrame.contentWindow.document.body.querySelector(".product-reviews-container");
-        console.log(customerContent)
-        // // 清空 iframe 中的内容
-        customerFrame.contentWindow.document.body.innerHTML = '';
-        // // 将 .product-reviews-container 元素添加到 iframe 中
-        customerFrame.contentWindow.document.body.appendChild(customerContent);
-
-        // 输出 customerContent 内容，仅供测试
-        // }
-    });
-
-    //carousel
-    $(document).ready(function () {
-        let items = document.querySelectorAll(".carousel .carousel-item");
-
-        items.forEach((el) => {
-            const minPerSlide = 3
-            let next = el.nextElementSibling
-            for (var i = 1; i < minPerSlide; i++) {
-                if (!next) {
-                    // wrap carousel by using first child
-                    next = items[0]
-                }
-                let cloneChild = next.cloneNode(true)
-                el.appendChild(cloneChild.children[0])
-                next = next.nextElementSibling
-            }
-
-        })
-    });
-</script>
-<script>
     //自動抓取月份最後一天
     const nowDate = new Date();
     const year = nowDate.getFullYear()

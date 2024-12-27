@@ -571,32 +571,7 @@
                 </div>
                 <div class="fv">
                     <!-- <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2405color/02_banner.png" alt="" /> -->
-                    <!-- <img src="images/banner.png" alt=""> -->
-                    
-                    <!-- banner 自動抓取月份最後一天 start -->
-                    <style>
-                        .banner_text_top{
-                            font-size: 27px;
-                            margin: 0 0 8px 0;
-                        }
-                        .banner_text_bottom{
-                            font-size: 36px;
-                            margin: 0;
-                            letter-spacing: 4px;
-                        }
-                        .text_small{
-                            font-size: 27px;
-                        }
-                    </style>
-                    <div class="banner_box" style="position: relative;">
-                        <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/banner_bg.png" alt="">
-                        <div class="banner_text" style="width:100%;position: absolute;top:50%;left:50%;transform: translate(-50%, -50%);text-align: center;color:#ffffff;font-weight: bold;">
-                            <p class="banner_text_top">日·本·專·利·內·衣·設·計</p>
-                            <p class="banner_text_bottom"><span class="text_small">香港<span class="lastday"></span>前</span>免國際運費</p>
-                        </div>
-                    </div>
-                    <!-- banner 自動抓取月份最後一天 end -->
-                    
+                    <img id="summer_banner" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/hk_banner.png" alt="" style="cursor: pointer;">
                     <div class="fv_video_box">
                         <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/01_bg_0829.png" alt="" />
                         <video id="fv_video" src="https://lunanaturalbra.com/hk/lnubhk/images_0124/fv/01_video.mp4"
@@ -606,7 +581,9 @@
                             <source src="https://lunanaturalbra.com/hk/lnubhk/images_0124/fv/01_video.ogg"
                                 type="video/ogg" />
                         </video>
+                        <a id="summer"></a>
                     </div>
+                    <!-- <img id="summer_event" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/hk_event.png" alt="" style="cursor: pointer;"> -->
                     <div class="point_box lazyload fadeup" id="videolink">
                         <div class="point_intro_box">
                             <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/2406/point_intro.png" alt="">
@@ -1061,6 +1038,8 @@
                         </div>
                     </section>
 
+                    
+                    <a id="summer_offer"></a>
                     <section class="color_box_layout lazyload fadeup">
                         <p class="color_box_title">養成美胸從現在開始</p>
                         <div class="d-flex justify-content-center">
@@ -1076,6 +1055,9 @@
                         </div>
                     </section>
 
+
+                    
+                    <!-- <img class="lazyload fadeup copybtn" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/offerbanner.png" alt="" style="cursor: pointer;"/> -->
                     <div class="offer_box lazyload fadeup" style="position: relative;">
                         <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/hk_offer.png" alt="" />
                         <div id="shopline-section-1691658726756013023f" class="shopline-section">
@@ -1341,6 +1323,7 @@
                         </div>
                     </section>
 
+                    <!-- <img class="lazyload fadeup copybtn" src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240816/offerbanner.png" alt="" style="cursor: pointer;"/> -->
                     <div class="offer_box lazyload fadeup" style="position: relative;">
                         <img src="https://lunanaturalbra.com/hk/lnubhk2/imgs/240829/hk_offer.png" alt="" />
                         <div id="shopline-section-1691658726756013023f" class="shopline-section">
@@ -1427,11 +1410,35 @@
     }
 
     //copy折扣碼 
-    // function copybtn(couponcode) {
-    //     // 複製（利用 Clipboard API 中的寫入功能）
-    //     navigator.clipboard.writeText(couponcode);
-    //     confirm(`恭喜您成功領取折扣碼！\n您已複製以下優惠代碼 : ${couponcode}！\n於購物車選擇商品後，於「優惠代碼」欄位輸入 即可享總結帳金額再折HKD$35(NT$150)`)
-    // }
+    function copybtn(couponcode) {
+        // 複製（利用 Clipboard API 中的寫入功能）
+        navigator.clipboard.writeText(couponcode);
+        confirm(`恭喜您成功領取折扣碼！\n您已複製以下優惠代碼 : ${couponcode}！\n於購物車選擇商品後，於「優惠代碼」欄位輸入 即可享總結帳金額再折HKD$35(NT$150)`)
+    }
+
+    $(".copybtn").on("click", function () {
+        copybtn("SS08LUNA");
+    });
+
+    $('#summer_banner').click(function (e) {
+        e.preventDefault();
+        copybtn("SS08LUNA");
+        let innerheight = window.innerHeight;
+        $('html , body').animate({
+            // scrollTop: $('#sizelink').offset().top - (0.5 * innerheight),
+            scrollTop: $('#summer_event').offset().top - 100,
+        }, 900);
+    });
+
+    $('#summer_event').click(function (e) {
+        e.preventDefault();
+        copybtn("SS08LUNA");
+        let innerheight = window.innerHeight;
+        $('html , body').animate({
+            // scrollTop: $('#sizelink').offset().top - (0.5 * innerheight),
+            scrollTop: $('#summer_offer').offset().top - 100,
+        }, 900);
+    });
 </script>
 <script>
     //客人評論區塊
@@ -1472,18 +1479,6 @@
         })
     });
 </script>
-<script>
-    //自動抓取月份最後一天
-    const nowDate = new Date();
-    const year = nowDate.getFullYear()
-    let month = nowDate.getMonth() + 1;
-    month = month < 10 ? '0' + month : month;
-    let lastDay = new Date(`${year}`, `${month}`, 0);
-    let day = lastDay.getDate();
-    day = day < 10 ? '0' + day : day;
-    document.querySelector('.lastday').textContent=`${month}/${day}`;
-</script>
-
 <!-- 抓取網址參數存到cookie -->
 <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script>
